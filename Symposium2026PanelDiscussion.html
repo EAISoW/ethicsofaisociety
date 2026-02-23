@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Panel Discussion – Ethics of AI Society of Waterloo</title>
+    <title>Panelists – Ethics of AI Society of Waterloo</title>
 
     <style>
         body {
             background-color: #232A44;
             color: white;
             font-family: Arial, sans-serif;
-            text-align: left;
+            margin: 0;
         }
 
         a {
             color: #A9C7FF;
+            text-decoration: none;
         }
 
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        td, th {
-            border: 1px solid #ccc;
-            padding: 15px;
-            vertical-align: top;
-        }
-
-        th {
-            background-color: #000000;
-            text-align: left;
-            font-size: 1.2em;
-        }
-
-        .section-header {
-            background-color: #d25e00;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        .panelist-name {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        .panelist-photo {
-            width: 200px;
-        }
-
-        .bio {
-            line-height: 1.6;
+        a:hover {
+            text-decoration: underline;
         }
 
         .header-image {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 20px auto;
         }
 
-        .page-title {
+        .content {
+            width: 75%;
+            margin: 40px auto;
+            line-height: 1.6;
+        }
+
+        h1 {
             text-align: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
+        }
+
+        .panelist-box {
+            display: flex;
+            background-color: #1b2138;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-left: 6px solid #d25e00;
+            align-items: flex-start;
+        }
+
+        .panelist-image {
+            width: 230px;
+            margin-right: 25px;flex-shrink: 0;
+        }
+
+.panelist-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+        .panelist-info h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .panelist-title {
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 768px) {
+            .panelist-box {
+                flex-direction: column;
+            }
+
+            .panelist-image {
+                margin-bottom: 20px;
+            }
         }
 
     </style>
@@ -70,68 +88,69 @@
 
 <body>
 
-<a href="https://eaisow.github.io/ethicsofaisociety/">
+<a href="index.html">
     <img src="images/eais.png" width="700" class="header-image">
 </a>
 
-<h1 class="page-title">Panel Discussion</h1>
+<div class="content">
 
-<table>
+<h1>Symposium Panelists</h1>
 
-<tr>
-    <th colspan="2" class="section-header">Panelists</th>
-</tr>
 
 <!-- Panelist 1 -->
-<tr>
-    <td width="220">
-        <img src="images/RC headshot.png" class="panelist-photo">
-    </td>
-    <td>
-        <div class="panelist-name">Rob Cerjanec, Memeber of Provincial Parliament for Ajax</div>
-        <div class="bio">
-            A lifelong advocate for public education and a practical problem-solver, Rob Cerjanec was elected as the Member of Provincial Parliament for Ajax in 2025. He is currently the only Ontario Liberal MPP representing a riding in the 905. As the Ontario Liberal Critic for Economic Development & Innovation, and Tourism, Sport & Culture, he is focused on building an economy that leverages, commercializes, and exports Ontario-made innovation so every young person has the opportunity to succeed.
+<div class="panelist-box">
+    <div class="panelist-image">
+        <img src="images/RC headshot.png" alt="Panelist 1">
+    </div>
+    <div class="panelist-info">
+        <h3>Rob Cerjanec</h3>
+        <div class="panelist-title">Member of Provincial Parliament for Ajax</div>
+        <p>
+       A lifelong advocate for public education and a practical problem-solver, Rob Cerjanec was elected as the Member of Provincial Parliament for Ajax in 2025. He is currently the only Ontario Liberal MPP representing a riding in the 905. As the Ontario Liberal Critic for Economic Development & Innovation, and Tourism, Sport & Culture, he is focused on building an economy that leverages, commercializes, and exports Ontario-made innovation so every young person has the opportunity to succeed.
             <p>
 Rob has been a leading voice on innovation policy, introducing legislation to strengthen Ontario’s approach to artificial intelligence and championing the commercialization of homegrown ideas to drive growth, create jobs, and keep talent in the province. He is committed to investing in healthcare and education, improving transportation options, protecting the environment, and making life more affordable.
 </p><p>
-Before being elected, Rob served as Chief of Staff to Toronto’s Deputy Mayor Ana Bailão, was a small business owner and consultant, and held a executive role with the Durham District School Board, where he oversaw strategic initiatives and external relations, helped drive organizational change, and supported parents navigating the education system. He holds a BA in Political Science and an MBA from the Schulich School of Business.</p>
-        </div>
-    </td>
-</tr>
+Before being elected, Rob served as Chief of Staff to Toronto’s Deputy Mayor Ana Bailão, was a small business owner and consultant, and held a executive role with the Durham District School Board, where he oversaw strategic initiatives and external relations, helped drive organizational change, and supported parents navigating the education system. He holds a BA in Political Science and an MBA from the Schulich School of Business.
+        </p>
+    </div>
+</div>
+
 
 <!-- Panelist 2 -->
-<tr>
-    <td>
-        <img src="images/panelist2.jpg" class="panelist-photo">
-    </td>
-    <td>
-        <div class="panelist-name">Dr. Patricia Marino, Professor of Philosophy, University of Waterloo </div>
-        <div class="bio">
-            Patricia Marino is a Professor of Philosophy at the University of Waterloo.
-        </div>
-    </td>
-</tr>
+<div class="panelist-box">
+    <div class="panelist-image">
+        <img src="images/panelist2.jpg" alt="Panelist 2">
+    </div>
+    <div class="panelist-info">
+        <h3>Dr. Patricia Marino</h3>
+        <div class="panelist-title">Professor of Philosophy, University of Waterloo</div>
+        <p>
+        Patricia Marino is a Professor of Philosophy at the University of Waterloo.
+        </p>
+    </div>
+</div>
+
 
 <!-- Panelist 3 -->
-<tr>
-    <td>
-        <img src="images/IM headshot.jpg" class="panelist-photo">
-    </td>
-    <td>
-        <div class="panelist-name">Dr. Ian J. MacDonald, Philosopher, University of Waterloo</div>
-        <div class="bio">
-            Ian MacDonald is an educator and writer at the University of Waterloo who investigates the interrelations between inquiry, meaning, and method, with a focus on AI ethics, the ethics of belief, and American pragmatism. He is co-author, with Matt Silk, of <a href="https://broadviewpress.com/product/an-inquirers-guide-to-ethics-in-ai/">An Inquirer’s Guide to Ethics in AI.</a>
-        </div>
-    </td>
-</tr>
+<div class="panelist-box">
+    <div class="panelist-image">
+        <img src="images/IM headshot.jpg" alt="Panelist 3">
+    </div>
+    <div class="panelist-info">
+        <h3>Dr. Ian J. MacDonald</h3>
+        <div class="panelist-title">Philosopher, University of Waterloo</div>
+        <p>
+         Ian MacDonald is an educator and writer at the University of Waterloo who investigates the interrelations between inquiry, meaning, and method, with a focus on AI ethics, the ethics of belief, and American pragmatism. He is co-author, with Matt Silk, of <a href="https://broadviewpress.com/product/an-inquirers-guide-to-ethics-in-ai/">An Inquirer’s Guide to Ethics in AI.</a>
+        </p>
+    </div>
+</div>
 
-</table>
 
-<br><br>
+<div class="footer">
+    <a href="index.html">Return to Home</a>
+</div>
 
-<center>
-<a href="https://eaisow.github.io/ethicsofaisociety/">Return to Home</a>
-</center>
+</div>
 
 </body>
 </html>
