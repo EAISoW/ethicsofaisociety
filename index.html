@@ -3,209 +3,405 @@
 <head>
     <title>Ethics of AI Institute</title>
 
-    <style>
-        body {
-            background-color: #232A44;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
+<style>
 
-        a {
-            color: #A9C7FF;
-            text-decoration: none;
-        }
+body{
+    background:#232A44;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+a{
+    color:#A9C7FF;
+    text-decoration:none;
+}
 
-        .header {
-            text-align: center;
-            padding-top: 20px;
-        }
+a:hover{
+    text-decoration:underline;
+}
 
-        .nav {
-            text-align: center;
-            margin-top: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #ffffff;
-        }
+.header{
+    text-align:center;
+    padding-top:10px;
+}
 
-        .nav a {
-            margin: 0 20px;
-            font-weight: bold;
-        }
+.nav{
+    text-align:center;
+    margin-top:10px;
+    padding:15px 0;
+    border-bottom:2px solid white;
+}
 
-        .content {
-            width: 75%;
-            margin: 40px auto;
-            line-height: 1.6;
-        }
+.nav a{
+    margin:0 18px;
+    font-weight:bold;
+}
 
-        h1, h2 {
-            text-align: center;
-        }
+.content{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:40px 0;
+}
 
-        .section {
-            margin-top: 60px;
-        }
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:10px;
+}
 
-        .highlight {
-            background-color: #1b2138;
-            padding: 20px;
-            margin-top: 20px;
-        }
+h2{
+    margin-top:0;
+}
 
-        .poster-row img {
-            margin: 5px;
-        }
+.subtitle{
+    text-align:center;
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:40px;
+}
 
-    </style>
+/* ---------------- HERO ---------------- */
+
+.hero{
+    display:flex;
+    gap:30px;
+    align-items:stretch;
+    margin-bottom:50px;
+}
+
+.news{
+    width:32%;
+    background:#1b2138;
+    border-radius:10px;
+    padding:25px;
+    box-sizing:border-box;
+}
+
+.news h2{
+    text-align:center;
+    border-bottom:1px solid #556;
+    padding-bottom:10px;
+}
+
+.news-item{
+    margin-bottom:25px;
+}
+
+.news-date{
+    color:#A9C7FF;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.news-title{
+    margin-top:5px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.news-text{
+    margin-top:6px;
+    color:#dddddd;
+    line-height:1.5;
+}
+
+.hero-image{
+    width:68%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.caption{
+    font-size:19px;
+    margin-top:20px;
+    line-height:1.6;
+}
+
+/* ---------------- CARDS ---------------- */
+
+.cards{
+    display:flex;
+    gap:25px;
+    margin:50px 0;
+}
+
+.card{
+    flex:1;
+    background:#1b2138;
+    padding:25px;
+    border-radius:10px;
+}
+
+.card h3{
+    margin-top:0;
+    text-align:center;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#365FA8;
+    color:white;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#4B74C3;
+    text-decoration:none;
+}
+
+/* ---------------- HIGHLIGHT ---------------- */
+
+.highlight{
+    background:#1b2138;
+    padding:25px;
+    border-radius:10px;
+    margin:50px 0;
+}
+
+.section{
+    margin-top:60px;
+}
+
+.poster-row img{
+    margin:5px;
+}
+
+footer{
+    text-align:center;
+    margin:70px 0 30px 0;
+    color:#cccccc;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+}
+
+.news{
+    width:100%;
+}
+
+.hero-image{
+    width:100%;
+}
+
+.cards{
+    flex-direction:column;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <div class="header">
-    <img src="images/eaii.png" width="900">
+<img src="images/eaii.png" width="900">
 </div>
 
 <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="AboutUs.html">About Us</a>
-    <a href="EAIIDirector.html">EAII Director</a>
-    <a href="MeetingArchive.html">Meeting Archive</a>
-    <a href="PastSymposiums.html">Past Symposiums</a>
-    <a href="Publications.html">Publications and Media</a>
+   <a href="AboutUs.html">About Us</a>
+    <a href="BoardofDirectors.html">Governance</a>
+    <a href="advisorsandfellows.html">Fellows</a>
+    <a href="Publications.html">Research</a>
+    <a href="MeetingArchive.html">Meetings</a>  
+    <a href="Media.html">Media</a>
 </div>
 
 <div class="content">
 
-    <center>
-    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/033cFAOKxfYqiMIVCQ5p0V?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</center>
 <h1>Welcome</h1>
 
-<p style="text-align:center;font-size: 20px;">
-The Ethics of AI Institute (formerly the Ethics of AI Society of Waterloo) is an interdisciplinary organization <br>
-    dedicated to examining the philosophical, ethical, social, and political implications of AI.<br>
+<div class="subtitle">
+
+The Ethics of AI Institute (formerly the Ethics of AI Society of Waterloo) is an interdisciplinary research organization dedicated to advancing scholarship, public engagement, and informed discussion on the ethical, philosophical, social, and political implications of artificial intelligence.
+
+<br><br>
+
+Our members include educators, students, and administrators from nine universities and colleges.
+
+</div>
+
+<div class="hero">
+
+<div class="news">
+
+<h2>News & Updates</h2>
+
+<div class="news-item">
+
+<div class="news-date">June 2026</div>
+
+<div class="news-title">
+Rebranding
+</div>
+
+<div class="news-text">
+The Ethics of AI Society of Waterloo officially became the Ethics of AI Institute.
+</div>
+
+</div>
+    
+    <div class="news-item">
+
+<div class="news-date">July 2026</div>
+
+<div class="news-title">
+Institutional Charter
+</div>
+
+<div class="news-text">
+The Ethics of AI Society of Waterloo officially became the Ethics of AI Institute. The Institute has appointed its inaugural Board of Directors to guide future growth and governance.
+</div>
+
+</div>
+
+<div class="news-item">
+
+<div class="news-date">July 2026</div>
+
+<div class="news-title">
+Meeting
+</div>
+
+<div class="news-text">
+The Institute held a meeting where we discussed ethical issues involving AI in agriculture.
+</div>
+
+</div>
+
+
+<div class="news-item">
+
+<div class="news-date">Next Meeting</div>
+
+<div class="news-text">
+September, 2026 (Topic: Drone Warfare)
+<br>
+See the Teams group for details.
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/Symposium2.jpg">
+
+<div class="caption">
+
+Our third symposium was held on March 13, 2026 at Wilfrid Laurier University and featured a keynote panel with Dr. Patricia Marino, Dr. Ian MacDonald, and Ajax MPP Rob Cerjanec.
+
+</div>
+
+</div>
+
+</div>
+
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/show/033cFAOKxfYqiMIVCQ5p0V?utm_source=generator"
+width="100%"
+height="152"
+frameborder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
+</iframe>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Research</h3>
+
+<p>
+
+The Institute supports interdisciplinary scholarship in AI ethics, AI literacy, philosophy of technology, public policy, governance, and related fields.
+
 </p>
-    <p style="text-align:center;font-size: 18px;"> Our membership includes educators, students, and administrators across nine colleges and universities. <br><br><b>Become a member by joining our Teams group.</b></p>
+
+<a class="button" href="Publications.html">
+View Research
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Meetings</h3>
+
+<p>
+
+We host regular interdisciplinary discussions bringing together faculty, students, professionals, and policymakers.
+
+</p>
+
+<a class="button" href="MeetingArchive.html">
+Meeting Archive
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Publications & Media</h3>
+
+<p>
+
+Explore our podcast, interviews, articles, books, and other public engagement activities.
+
+</p>
+
+<a class="button" href="Publications.html">
+Explore
+</a>
+
+</div>
+
+</div>
 
 <div class="highlight">
-<p>
-<strong>Next Meeting:</strong> July 17th at 4pm.<br>
-See our Teams group for details.
-</p>
 
-<p>
-To join our Teams group, email:
+<h2 style="text-align:center;">Become a Member</h2>
+
+<p style="text-align:center;font-size:18px;">
+
+Membership is open to educators, researchers, students, and professionals interested in the ethical implications of artificial intelligence.
+
+<br><br>
+
+<strong>Join our Microsoft Teams community by emailing:</strong>
+
+<br><br>
+
 <a href="mailto:info@ethicsofaiinstitute.com">
+
 info@ethicsofaiinstitute.com
+
 </a>
+
 </p>
-</div>
-
- <div class="section">
-<h2>March Symposium</h2>
-
-    <div style="text-align:center;">
-<img src="images/Symposium2.jpg" height="450"><br>
-</div>
-</div>
-
-<p style="text-align:center;font-size: 20px;">
-Our third symposium took place on March 13th at Wilfrid Laurier University. Our Keynote included a panel discussion with Dr. Patricia Marino, Dr. Ian MacDonald, and the MPP for Ajax, Rob Cerjanec. 
-</p>   
-    
-<div class="section">
-    <h2>Check out the Ethics of AI Podcast<Br>
-        <a href="https://anchor.fm/s/11257ffcc/podcast/rss">RSS Feed</a></h2>
-    <div style="text-align:center;">
-    <img src="images/Logowebsite1.png" width="800"></div>
-</div>
-    
-
-
-<div class="section">
-<h2>Meeting Archive</h2>
-
-
- <p>
-     <a href="july17meeting.html">
-            Meeting - July 17, 2026 - Institutional Chartering and AI in Agriculture
-        </a>  
-<br>
-<a href="june19meeting.html">
-            Meeting - June 19, 2026 - Government of Canada's National AI Strategy
-        </a>  
-   <br>   
-     <a href="March20Meeting.html">
-            Meeting - March 20, 2026 - Model Validation and Opacity
-        </a>  
-   <br>      
-
-          <a href="February27meeting.html">
-            Meeting - February 27, 2026 - Environment and AI, Trustworthy AI
-        </a>  
-  <br>      
-        <a href="February13meeting.html">
-            Meeting - February 13, 2026 - AI and Privacy, AI in Warfare (Guest Report: David Hildebrand)
-        </a>  
-  <br>
-        <a href="January30meeting.html">
-            Meeting - January 30, 2026 - Peircean Epistemology & AI, AI in academics
-        </a>  
-        <br>
-        <a href="November25meeting.html">
-            Meeting - November 25, 2025 - The Ethics of Gen-AI Art (Paper presentation: Matt S.W. Silk)
-        </a>  
-           <br>
-        <a href="November11meeting.html">
-            Meeting - November 11, 2025 - Philosophy of testimony and AI,  AGI, Organoids & AI (Guest Presentation: Tim Kenyon)
-        </a>  
-          <br>
-        <a href="October28meeting.html">
-            Meeting - October 28, 2025 - AI in medicine, AI therapy, Adult content
-        </a>  
-           <br>
-        <a href="October7meeting.html">
-            Meeting - October 7, 2025 - AI Literacy (Presentation: Matt S.W. Silk and Ian J. MacDonald)
-        </a>  
-        <br>
-        Meeting - September 17, 2025 - AI in education, AI Psychosis<br>
-        Meeting - June 13, 2025 - AI Literacy and AI in research<br>
-        Meeting - March 21, 2025 - AI in education (Academic integrity accusations and inductive risk)<br>
-        Meeting - March 7, 2025 - Gen-AI art<br>
-        Meeting - February 14, 2025 - Algorithmic manipulation<br>
-        Meeting - January 17, 2025 - AI in healthcare<br>
-        Meeting - November 8, 2024 - Affective computing and workforce surveilance<br>
-        Meeting - October 11, 2024 - Business and AI, privacy<br>
-        Meeting - September 20, 2024 - AI in the military<br>   
-        <a href="March12Meeting.html">Meeting - March 1, 2024 - Facial Recognition, AI ethics committees</a><br>
-        Meeting - February 2, 2024 - AI hallucinations and evidence<br>
-        <a href="November16meeting.html">Meeting - November 16, 2023 - AI Regulation, Deepfakes, AI Music</a><br>
-        <a href="October26meeting.html">Meeting - October 26, 2023 - AI Hallucination, Algorithmic Bias, Cognition and Autonomy</a><br>
-        <a href="Firstmeeting.html">Meeting - October 5, 2023 - Inaugural Meeting</a><br>
-        <a href="https://www.youtube.com/watch?v=O3OmZ3fZmMY"> Original Ethics of AI Course (PHIL 228) - Winter 2022 - Formation of Ethics of AI Society</a></p>
 
 </div>
 
+<footer>
 
-<div class="section">
-<h2>Posters</h2>
+© 2026 Ethics of AI Institute
 
-<div class="poster-row" style="text-align:center;">
-<img src="images/poster-1.png" width="200">
-<img src="images/poster-2.png" width="200">
-<img src="images/poster-3.png" width="200">
-<img src="images/poster-4.png" width="200">
-<img src="images/poster-5.png" width="200"><br>
-<img src="images/poster-6.png" width="200">
-<img src="images/poster-7.png" width="200">
-</div>
-
-</div>
+</footer>
 
 </div>
 
