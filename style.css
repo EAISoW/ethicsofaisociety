@@ -96,7 +96,13 @@ img { max-width: 100%; display: block; }
 }
 .brand { display: flex; align-items: center; flex: none; }
 .brand img { height: 38px; width: auto; display: block; }
+@media (max-width: 960px) {
 
+    .brand img {
+        height: 30px;
+    }
+
+}
 .menu { display: flex; align-items: center; gap: 3px; }
 .menu a {
   color: #fff; font-weight: 550; font-size: 0.92rem;
