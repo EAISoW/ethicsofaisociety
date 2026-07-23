@@ -187,8 +187,16 @@ section.paper { background: var(--paper); }
   background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
   overflow: hidden; box-shadow: var(--shadow-sm);
 }
-.person .ph { height: 250px; background: var(--cream-2); overflow: hidden; }
-.person .ph img { width: 100%; height: 100%; object-fit: cover; }
+.person .ph {
+    aspect-ratio: 3 / 4;
+}
+
+.person .ph img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
 .person .body { padding: 22px 24px 26px; }
 .person .role { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.12em;
   font-weight: 650; color: var(--clay); }
