@@ -309,3 +309,18 @@ section.paper { background: var(--paper); }
   .pub { flex-direction: column; gap: 14px; }
   .foot-grid { grid-template-columns: 1fr; }
 }
+
+/* ---------- Fellows images ---------- */
+.fellows-page .people {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+    justify-content: center;
+}
+
+.fellows-page .person .ph {
+    height: 220px;
+}
+
+.fellows-page .person .ph img {
+    object-fit: cover;
+    object-position: center 12%;
+}
