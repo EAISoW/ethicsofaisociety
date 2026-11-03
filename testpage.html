@@ -92,58 +92,124 @@
     <img src="images/eais.png" width="700" class="header-image">
 </a>
 
-<div class="content">
+<div class="newsletter-signup">
+  <h2>Educators, researchers, students, and professionals are all welcome. Join our Microsoft Teams community to take part in meetings and discussions.</h2>
 
-<h1>Symposium Panelists</h1>
+  <form
+    action="mailto:info@ethicsofaiinstitute.com"
+    method="post"
+    enctype="text/plain"
+  >
+    <label for="newsletter-email">Email address</label>
 
+    <div class="newsletter-fields">
+      <input
+        type="email"
+        id="newsletter-email"
+        name="email"
+        placeholder="you@example.com"
+        autocomplete="email"
+        required
+      >
 
-<!-- Panelist 1 -->
-<div class="panelist-box">
-    <div class="panelist-image">
-        <img src="images/RC headshot.png" alt="Panelist 1">
+      <button type="submit">Subscribe</button>
     </div>
-    <div class="panelist-info">
-        <h3>Rob Cerjanec</h3>
-        <div class="panelist-title">Member of Provincial Parliament for Ajax</div>
-        <p>
-       A lifelong advocate for public education and a practical problem-solver, Rob Cerjanec was elected as the Member of Provincial Parliament for Ajax in 2025. He is currently the only Ontario Liberal MPP representing a riding in the 905. As the Ontario Liberal Critic for Economic Development & Innovation, and Tourism, Sport & Culture, he is focused on building an economy that leverages, commercializes, and exports Ontario-made innovation so every young person has the opportunity to succeed.
-            <p>
-Rob has been a leading voice on innovation policy, introducing legislation to strengthen Ontario’s approach to artificial intelligence and championing the commercialization of homegrown ideas to drive growth, create jobs, and keep talent in the province. He is committed to investing in healthcare and education, improving transportation options, protecting the environment, and making life more affordable.
-</p><p>
-Before being elected, Rob served as Chief of Staff to Toronto’s Deputy Mayor Ana Bailão, was a small business owner and consultant, and held a executive role with the Durham District School Board, where he oversaw strategic initiatives and external relations, helped drive organizational change, and supported parents navigating the education system. He holds a BA in Political Science and an MBA from the Schulich School of Business.
-        </p>
-    </div>
+  </form>
 </div>
 
+<style>
+  .newsletter-signup {
+    max-width: 600px;
+    padding: 2rem;
+    margin: 2rem auto;
+    background: #f5f7f8;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+  }
 
-<!-- Panelist 2 -->
-<div class="panelist-box">
-    <div class="panelist-image">
-        <img src="images/panelist2.jpg" alt="Panelist 2">
-    </div>
-    <div class="panelist-info">
-        <h3>Dr. Patricia Marino</h3>
-        <div class="panelist-title">Professor of Philosophy, University of Waterloo</div>
-        <p>
-        Patricia Marino is a Professor of Philosophy at the University of Waterloo.
-        </p>
-    </div>
-</div>
+  .newsletter-signup h2 {
+    margin: 0 0 0.5rem;
+    color: #17212b;
+  }
+
+  .newsletter-signup p {
+    margin: 0 0 1.25rem;
+    color: #4b5563;
+  }
+
+  .newsletter-signup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .newsletter-fields {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .newsletter-fields input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.75rem;
+    border: 1px solid #9ca3af;
+    border-radius: 6px;
+    font: inherit;
+  }
+
+  .newsletter-fields input:focus {
+    border-color: #176b5b;
+    outline: 3px solid rgba(23, 107, 91, 0.2);
+  }
+
+  .newsletter-fields button {
+    padding: 0.75rem 1.25rem;
+    border: 0;
+    border-radius: 6px;
+    background: #176b5b;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .newsletter-fields button:hover {
+    background: #105246;
+  }
+
+  @media (max-width: 520px) {
+    .newsletter-fields {
+      flex-direction: column;
+    }
+  }
+</style>
 
 
-<!-- Panelist 3 -->
-<div class="panelist-box">
-    <div class="panelist-image">
-        <img src="images/IM headshot.jpg" alt="Panelist 3">
-    </div>
-    <div class="panelist-info">
-        <h3>Dr. Ian J. MacDonald</h3>
-        <div class="panelist-title">Philosopher, University of Waterloo</div>
-        <p>
-         Ian MacDonald is an educator and writer at the University of Waterloo who investigates the interrelations between inquiry, meaning, and method, with a focus on AI ethics, the ethics of belief, and American pragmatism. He is co-author, with Matt Silk, of <a href="https://broadviewpress.com/product/an-inquirers-guide-to-ethics-in-ai/">An Inquirer’s Guide to Ethics in AI.</a>
-        </p>
-    </div>
-</div>
+<tr>
+
+<td width="35%">&nbsp;</td>
+
+<td width="65%">
+
+<input type="submit" name="Submit" value="Submit">
+
+<input type="reset" name="reset" value="Reset">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="35%">&nbsp;</td>
+
+<td width="65%">&nbsp;</td>
+
+</tr>
+
+</table>
+
+</form>
 
 
 <div class="footer">
