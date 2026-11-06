@@ -86,7 +86,7 @@
     </style>
 </head>
 
-<body><!-- Begin Brevo Form -->
+<!-- Begin Brevo Form -->
 
 
 <!-- START - We recommend to place the below code in head tag of your website html  -->
@@ -258,7 +258,7 @@
 
                     <span class="checkbox checkbox_tick_positive"
             style="margin-left:"
-            ></span><span style="font-family:Helvetica, sans-serif; font-size:14px; text-align:left; color:#3C4858; background-color:transparent;"><p>I agree to receive your emails and confirm that I have read your privacy policy and legal notice.</p></span>
+            ></span><span style="font-family:Helvetica, sans-serif; font-size:14px; text-align:left; color:#3C4858; background-color:transparent;"><p>I agree to receive emails and confirm that I have read your privacy policy and legal notice.</p></span>
 
                   </label>
                 </div>
@@ -284,28 +284,7 @@
 
 
 
-
-          <div class="sib-captcha sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-
-                <script>
-                  function handleCaptchaResponse() {
-                    var event = new Event('captchaChange');
-                    document.getElementById('sib-captcha').dispatchEvent(event);
-                  }
-                </script>
-                <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6LdTThMuAAAAAELxTerfMKub-yVHVTO78hktm5Xb" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
-              </div>
-              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
-              </label>
-
-
-
-            </div>
-          </div>
-
+          <div class="g-recaptcha-v3" data-sitekey="6LdTThMuAAAAAELxTerfMKub-yVHVTO78hktm5Xb" style="display: none"></div>
 
 
 
@@ -395,7 +374,7 @@
 
 
 
-<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdTThMuAAAAAELxTerfMKub-yVHVTO78hktm5Xb&hl=en" async defer></script>
 
 
 
