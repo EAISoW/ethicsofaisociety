@@ -12,6 +12,50 @@
 </head>
 <body>
 
+  
+
+<!-- BREVO Form style  -->
+<style>
+  :where(.sib-form-message-panel) {
+    display: none;
+  }
+
+  :where(.sib-form-message-panel .sib-notification__icon) {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  #sib-container input:-ms-input-placeholder {
+    font-family: Segoe UI, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+  #sib-container input::placeholder {
+    font-family: Segoe UI, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+  #sib-container textarea::placeholder {
+    font-family: Segoe UI, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+
+  #sib-container a {
+    text-decoration: underline;
+    color: #2BB2FC;
+  }
+</style>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+
+<!--  END of Brevo form style -->
+
+
 <!-- ============ TOP BAR ============ -->
 <header class="topbar">
   <nav class="nav">
@@ -33,21 +77,145 @@
   </nav>
 </header>
 
+
+
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="wrap hero-grid">
+  <div class="wrap hero-grid" style="align-items:end;">
     <div>
       <span class="eyebrow">Formerly the Ethics of AI Society of Waterloo</span>
       <h1>Thinking carefully about the technology reshaping our world.</h1>
-      <p class="lead">An interdisciplinary research institute advancing scholarship, public engagement, and honest discussion on the ethical, philosophical, social, and political implications of artificial intelligence.</p>
+      <p class="lead" style="margin-bottom: 0.35em;">An interdisciplinary research institute advancing scholarship, public engagement, and honest discussion on the ethical, philosophical, social, and political implications of artificial intelligence.</p>
+
+
+<!-- Brevo form  -->
+<div class="sib-form" style="text-align: left;">
+  <div id="sib-form-container" class="sib-form-container" style="margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0;">
+    <div id="error-message" class="sib-form-message-panel" style="font-family: Segoe UI, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;
+        max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+
+                Your subscription could not be saved. Please try again.
+          
+          </span>
+      </div>
+    </div>
+    <div></div>
+    <div id="success-message" class="sib-form-message-panel" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-color:#13ce66; border-radius:3px;
+        max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+
+                Your subscription has been successful.
+                         
+          </span>
+      </div>
+    </div>
+    <div></div>
+    <div id="sib-container" class="sib-container--large sib-container--vertical" style="max-width:540px; width:100%; margin-left:0; margin-right:0; padding:0; text-align:left; background-color:transparent; border-width:1px; border-style:solid; border-color:#E1E8F3; border-radius:10px; direction:ltr; overflow:hidden;">
+      <form id="sib-form" method="POST" action="https://ffa99759.sibforms.com/serve/MUIFACjo6uqgmcxJM9cxDXM-JVvpUZOZxgRLMVK87Xe1GKtztuhES8RGH6SSvYOPibSWMOf2jVbWPzMqWGUjb_L6gTynMlU1AP4W6AldqDbeFjgyNi75C-kfWKK5ZDwjc6aS6N7vcCCivJ3_mG-Pj1JMTTe1q8yu3S9KJwI-KVMSM_vPGBYJcikzw4Cvw-bMrlnGoAdLkYafVL3zug==" data-type="subscription" style="margin:0; padding:16px;">
+
+
+        <h3 style="margin: 0 0 0.65em;">Stay updated on the EAII activities.</h3>
+
+        <div style="padding: 2px 0;">
+
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <div class="entry__field">
+                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" value="" placeholder="Enter your email address" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding: 0px 0;">
+          <div class="sib-optin sib-form-block" data-required="true">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row ">
+                <div class="entry__choice" style="">
+                  <label>
+                    <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
+                    <span class="checkbox checkbox_tick_positive"
+            style="display:inline-block; margin:0 8px 0 0;"
+            ></span><p style="display:inline; margin:0; font-family:Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; font-size:0.82rem; font-weight:400; line-height:1; color:#57657A;">I agree to receive your emails and confirm that I have read your <a href="https://ethicsofaiinstitute.com/privacy.html" target="_blank" rel="nofollow noopener">privacy policy</a><a href="https://ethicsofaiinstitute.com/privacy.html" rel="nofollow"></a>.
+                You may unsubscribe at any time using the link in our newsletter.</p><span data-required="*" style="display: inline;" class="entry__label entry__label_optin"></span>
+                  </label>
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:transparent; border-color:#ff4949; border-radius:3px;">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding: 2px 0;">
+          <div class="sib-form-block" style="text-align: left">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" style="display:inline-flex; align-items:center; gap:8px; font-family:Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; font-size:0.95rem; font-weight:600; line-height:1.65; text-align:center; color:#FFFFFF; background-color:#2563EB; border:1px solid #2563EB; border-radius:999px; padding:11px 20px;" form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+              </svg>
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="en">
+      </form>
+    </div>
+  </div>
+</div>
+<!-- END - We recommend to place the above code where you want the form in your website html  -->
+
+<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+<script>
+  window.LOCALE = 'en';
+
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+
+  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} list selected',
+      selectedLists: '{quantity} lists selected',
+      selectedOption: '{quantity} selected',
+      selectedOptions: '{quantity} selected',
+    }
+  };
+
+  var AUTOHIDE = Boolean(0);
+</script>
+
+
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+
+<!-- End Brevo Form -->
       <div class="hero-cta">
         <a href="about.html#join" class="btn">Join the community &rarr;</a>
         <a href="research.html" class="btn ghost">Explore our research</a>
       </div>
     </div>
-    <aside class="hero-card">
-      <img src="/images/Symposium2.jpg" alt="Third symposium keynote panel at Wilfrid Laurier University">
-      <div class="body">
+    <aside class="hero-card" style="height:75%; display:flex; flex-direction:column;">
+      <img src="/images/Symposium2.jpg" alt="Third symposium keynote panel at Wilfrid Laurier University" style="height:300px; object-fit:cover; flex:none;">
+      <div class="body" style="flex:1;">
         <span class="tag">Latest symposium</span>
         <h3>Third Annual Symposium</h3>
         <p>Held March 13, 2026 at Wilfrid Laurier University — a keynote panel with Dr. Patricia Marino, Dr. Ian MacDonald, and MPP Rob Cerjanec.</p>
@@ -57,7 +225,7 @@
 </section>
 
 <!-- ============ STATS ============ -->
-<section class="tint" style="padding-top:44px;padding-bottom:44px;">
+<section class="tint" style="padding-top:40px;padding-bottom:44px;">
   <div class="wrap">
     <div class="stats">
       <div class="stat"><div class="n">12</div><div class="l">Universities &amp; colleges represented</div></div>
@@ -175,11 +343,11 @@
 
 <!-- ============ JOIN CTA ============ -->
 <section class="cta-band" id="join">
-  <div class="wrap center" style="max-width:720px;">
+  <div class="wrap center" style="max-width:600px;">
     <span class="eyebrow">Become a member</span>
     <h2>Membership is open to anyone thinking seriously about AI.</h2>
     <p style="font-size:1.1rem;">Educators, researchers, students, and professionals are all welcome. Join our Microsoft Teams community to take part in meetings and discussions.</p>
-    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:8px;">
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px;">
       <a href="mailto:info@ethicsofaiinstitute.com"  class="btn">Email to join &rarr;</a>
       <a href="about.html" class="btn ghost">Learn more</a>
     </div>
@@ -191,7 +359,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="brand" style="margin-bottom:14px;">
+        <div class="brand" style="margin-bottom:12px;">
           <b style="font-family:var(--serif);font-size:1.1rem;">Ethics of AI Institute</b>
         </div>
         <p style="color:#A99A8C;font-size:0.92rem;max-width:34ch;">An interdisciplinary research institute on the ethics of artificial intelligence.</p>
