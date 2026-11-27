@@ -9,22 +9,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600&family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-  <style>
-  @media screen and (max-width: 768px) {
+<style>
+@media screen and (max-width: 768px) {
 
     .membership-container {
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        gap: 25px;
     }
 
-    .membership-text,
-    .membership-form {
-        width: 100%;
-        max-width: 100%;
+    .membership-container > div,
+    .membership-container > aside {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
     }
 
     .membership-form {
-        margin-top: 25px;
+        margin-top: 0;
+        padding: 22px;
     }
+
+}
 </style>
 }
 </head>
@@ -53,7 +60,7 @@
 
 <!-- JOIN -->
  <section class="hero">
-  <div class="wrap hero-grid" style="align-items:start; grid-template-columns:0.9fr 1.1fr;">
+  <div class="wrap hero-grid membership-container" style="align-items:start; grid-template-columns:0.9fr 1.1fr;">
     <div>
         <h1>Join the Ethics of AI Institute</h1>
         <p class="lead">The Institute welcomes students, faculty, policymakers, and members of the broader community. Join our Microsoft Teams group and take part in upcoming meetings.</p>
