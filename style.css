@@ -325,21 +325,3 @@ section.paper { background: var(--paper); }
     object-position: center 12%;
 }
 
-/* Mobile layout for membership page */
-@media screen and (max-width: 768px) {
-
-    .membership-container {
-        flex-direction: column;
-    }
-
-    .membership-text,
-    .membership-form {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .membership-form {
-        margin-top: 25px;
-    }
-
-}
